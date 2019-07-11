@@ -22,6 +22,7 @@
     line-height: 1.2;
     font-family: $font-family-heading;
     width: 70%;
+    background-color: rgba(255, 255, 255, 0.75);
     @include media-breakpoint-up(sm) {
       width: 70%;
     }
@@ -40,6 +41,7 @@
     font-weight: lighter;
     line-height: 1.4;
     color: $secondary;
+    background-color: rgba(255, 255, 255, 0.75);
     @include media-breakpoint-up(sm) {
       width: 70%;
     }
