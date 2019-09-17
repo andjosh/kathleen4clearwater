@@ -1,0 +1,45 @@
+---
+title: Donate
+layout: default
+bodyClass: page-donate
+---
+
+<div class="intro intro-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Donate</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <legend style="">
+                We appreciate donations of any size!
+            </legend>
+            <input type="hidden" name="business" value="kathleenforclearwater@gmail.com" />
+            <input type="hidden" name="image_url" value="https://kathleen4clearwater.andjosh.com/assets/images/kathleen-beckman-clearwater-city-council.png" />
+            <input type="hidden" name="no_shipping" value="2" />
+            <input type="hidden" name="cmd" value="_donations" />
+            <input type="hidden" name="on0" value="DisclosureName" />
+            <input type="hidden" name="on1" value="DisclosureEmployerOccuation" />
+            <input type="hidden" name="return" value="https://kathleen4clearwater.andjosh.com/completed" />
+            <input type="hidden" name="cancel_return" value="https://kathleen4clearwater.andjosh.com/cancelled" />
+            <label for="os0" style="display:block;margin-top:1rem">
+                Your Name
+            </label>
+            <input name="os0" id="os0" required/>
+            <label for="os1" style="display:block;margin-top:1rem">
+                Employer, Occupation
+            </label>
+            <input name="os1" id="os1" required/>
+            <div style="margin-top:1rem">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
