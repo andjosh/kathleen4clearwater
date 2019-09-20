@@ -15,31 +15,40 @@ bodyClass: page-donate
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-12 col-md-8">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <legend style="">
-                We appreciate donations of any size!
-            </legend>
+    <div class="col-12 col-md-6">
+        <form class="donate pb-5" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="business" value="kathleenforclearwater@gmail.com" />
-            <input type="hidden" name="image_url" value="https://kathleen4clearwater.andjosh.com/assets/images/kathleen-beckman-clearwater-city-council.png" />
+            <input type="hidden" name="image_url" value="https://kathleen4clearwater.andjosh.com/images/logo_800w.png" />
             <input type="hidden" name="no_shipping" value="2" />
             <input type="hidden" name="cmd" value="_donations" />
             <input type="hidden" name="on0" value="DisclosureName" />
             <input type="hidden" name="on1" value="DisclosureEmployerOccuation" />
-            <input type="hidden" name="return" value="https://kathleen4clearwater.andjosh.com/completed" />
-            <input type="hidden" name="cancel_return" value="https://kathleen4clearwater.andjosh.com/cancelled" />
-            <label for="os0" style="display:block;margin-top:1rem">
-                Your Name
-            </label>
-            <input name="os0" id="os0" required/>
-            <label for="os1" style="display:block;margin-top:1rem">
-                Employer, Occupation
-            </label>
-            <input name="os1" id="os1" required/>
+            <input type="hidden" name="return" value="https://tinyletter.com/kathleen4clearwater" />
+            <input type="hidden" name="cancel_return" value="https://kathleen4clearwater.andjosh.com/donate" />
+            <div class="form-group">
+                <label for="os0">Your Name</label>
+                <input name="os0" class="form-control" id="os0" aria-describedby="os0_help" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label for="os1">Your Employer, Occupation</label>
+                <input name="os1" class="form-control" id="os1" aria-describedby="os1_help" placeholder="Employer, Occupation" required>
+                <small id="os1_help" class="form-text text-muted">
+                    This information is required by the Federal Election Commission.
+                </small>
+            </div>
             <div style="margin-top:1rem">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <button class="button">
+                    Donate
+                </button>
             </div>
         </form>
     </div>
   </div>
+</div>
+<div style="margin-bottom:-1.6%">
+    <img src="/images/banner.jpg"
+        style="max-width:100%"
+        alt='Kathleen Beckman for Clearwater City Council: A new leader for residents, neighborhoods, small businesses, & the future of our environment and economy!'
+        title='Kathleen Beckman for Clearwater City Council'
+    />
 </div>

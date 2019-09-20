@@ -16,17 +16,24 @@ bodyClass: page-contact
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-8">
-      <ul>
-        <li><strong>Phone: </strong>{{ site.data.contact.phone }}</li>
-        <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
-            {{ site.data.contact.email }}</a></li>
-        {% if site.data.social.facebook %}
-        <li><strong>Facebook: </strong><a href="{{ site.data.social.facebook }}">{{ site.data.social.facebook }}</a></li>
-        {% endif %}
-        {% if site.data.contact.address %}
-        <li><strong>Address: </strong>{{ site.data.contact.address }}</li>
-        {% endif %}
-      </ul>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="tel:{{ site.data.contact.phone }}">
+              {{ site.data.contact.phone }}
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="mailto:{{ site.data.contact.email }}">
+                {{ site.data.contact.email }}
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="{{ site.data.social.facebook }}">Follow on Facebook</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://tinyletter.com/kathleen4clearwater">Subscribe to our newsletter!</a>
+          </li>
+        </ul>
     </div>
   </div>
 </div>
