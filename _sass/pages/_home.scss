@@ -1,20 +1,29 @@
 .page-home {
-  background-image: url('../images/undraw_voting_nvu7.svg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0px 80px;
-  @include media-breakpoint-up(sm) {
-    background-size: 90%;
-    background-position: 159px 40px;
-  }
-  @include media-breakpoint-up(md) {
-    background-size: 70%;
-    background-position: 100% 50px;
-  }
-  @include media-breakpoint-up(lg) {
-    background-size: 50%;
-    background-position: 95% 80px;
-  }
+    .headline {
+        font-family: $font-family-heading;
+        color: $primary;
+        @include media-breakpoint-up(lg) {
+          font-size: 3rem;
+        }
+    }
+    .splash-desktop {
+        margin-top: -5%;
+        display: none;
+        @include media-breakpoint-up(sm) {
+            display: block;
+        }
+    }
+    .splash-mobile {
+        display: block;
+        @include media-breakpoint-up(sm) {
+            display: none;
+        }
+        .splash-copy {
+            background-color: $secondary;
+            color: white;
+            margin-top: -75px;
+        }
+    }
   .call {
     position: relative;
     overflow: hidden;

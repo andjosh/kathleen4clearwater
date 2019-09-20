@@ -1,18 +1,12 @@
 baseurl: ''
 exclude: ['README.md']
 permalink: pretty
-title: 'Kathleen4Clearwater'
+title: 'Kathleen For Clearwater'
 
 collections:
   services:
     output: true
-    permalink: /services/:path/
-  team:
-    output: true
-    permalink: /team/:path/
-  testimonials:
-    output: true
-    permalink: /testimonials/:path/
+    permalink: /pillars/:path/
 
 defaults:
   - scope:

@@ -4,21 +4,10 @@ layout: default
 bodyClass: page-home
 ---
 
-<div class="intro pb-4">
-  <div class="container">
-        <h1 class='headline'>
-            <img src="/assets/images/kathleen-beckman-clearwater-city-council.png"
-                alt='Kathleen Beckman for Clearwater City Council'
-                title='Kathleen Beckman for Clearwater City Council'
-            />
-        </h1>
-      <p>
-        Leadership through action.
-      </p>
-  </div>
-</div>
-
 <div class="container pt-2">
+    <h1 class='headline pb-1 pt-1 pb-sm-5 pt-sm-5'>
+        {{ page.title }}
+    </h1>
   <div class="call">
     <div class="call-box-top">
       <div class="call-phone"><strong>Phone: </strong>
@@ -33,14 +22,31 @@ bodyClass: page-home
       </div>
     </div>
     <div class="call-box-bottom">
-        <a href="{{site.baseurl}}/contact" class="button">
+        <a href="{{site.baseurl}}/donate" class="button">
             Donate
         </a>
     </div>
   </div>
 </div>
+<div class="splash-desktop">
+    <img src="/images/banner.jpg"
+        style="max-width:100%"
+        alt='Kathleen Beckman for Clearwater City Council: A new leader for residents, neighborhoods, small businesses, & the future of our environment and economy!'
+        title='Kathleen Beckman for Clearwater City Council'
+    />
+</div>
+<div class="splash-mobile">
+    <div class="splash-copy p-3 pt-10">
+        A new leader for residents, neighborhoods, small businesses, & the future of our environment and economy!
+    </div>
+    <img src="/images/kathleen_beckman.jpg"
+        style="max-width:100%"
+        alt='Kathleen Beckman for Clearwater City Council: A new leader for residents, neighborhoods, small businesses, & the future of our environment and economy!'
+        title='Kathleen Beckman for Clearwater City Council'
+    />
+</div>
 
-<div class="container pt-8 pt-md-10">
+<div class="container pt-8 pb-8 pt-md-10 pb-md-10">
   <div class="row justify-content-start">
     <div class="col-12">
       <h2 class="title-3 text-dark mb-3">I will...</h2>
@@ -58,24 +64,7 @@ bodyClass: page-home
     </div>
     {% endfor %}
     <div class="col-12 text-center">
-      <a class="button button-primary mt-2" href="{{site.baseurl}}/services">View All Ideas</a>
+      <a class="button button-primary mt-2" href="{{site.baseurl}}/platform">View Platform</a>
     </div>
-  </div>
-</div>
-
-<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
-  <div class="row justify-content-center">
-    <div class="col-12">
-      <h2 class="title-3 text-dark mb-4">My Pillars</h2>
-    </div>
-    {% for feature in site.data.features %}
-    <div class="col-12 col-md-6 col-lg-4 mb-2">
-      <div class="feature">
-        {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image }}" /></div> {% endif %}
-        <h2 class="feature-title">{{ feature.title }}</h2>
-        <div class="feature-content">{{ feature.description }}</div>
-      </div>
-    </div>
-    {% endfor %}
   </div>
 </div>
