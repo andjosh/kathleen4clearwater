@@ -5,8 +5,14 @@
         <div class="footer">
           <h3 class="footer-title">{{site.title}}</h3>
           <ul class="footer-menu">
-            <li><a href="{{site.baseurl}}/">Home</a></li>
+            <li><a href="{{site.baseurl}}/about">About</a></li>
             <li><a href="{{site.baseurl}}/contact">Contact</a></li>
+              <li class="">
+                <a href="{{ site.data.social.facebook }}">Facebook</a>
+              </li>
+              <li class="">
+                <a href="{{ site.data.social.twitter }}">Twitter</a>
+              </li>
             <li class="copyright">© {{site.title}} {{site.time | date:'%Y'}}</li>
           </ul>
         </div>
