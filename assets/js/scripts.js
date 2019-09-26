@@ -7,6 +7,6 @@ menuTrigger.onclick = function() {
     menuTrigger.classList.toggle('is-active')
     body.classList.toggle('lock-scroll')
 }
-if (!window.location.protocol.match(/https/)) {
+if (!window.location.protocol.match(/https/) && window.location.hostname.match(/kathleen/)) {
     window.location = window.location.replace(/^http:/, 'https:');
 }
