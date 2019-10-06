@@ -1,6 +1,12 @@
 <div id="main-menu" class="main-menu">
   <ul>
-    <li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+    <li>
+        {% if page.url == '/' %}
+        <a href="#priorities" class="current">Priorities</a>
+        {% else %}
+        <a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">Home</a>
+        {% endif %}
+    </li>
     <li><a href="{{site.baseurl}}/donate/" class="{% if page.url contains 'donate' %}current{% endif %}">Donate</a></li>
     <li><a href="{{site.baseurl}}/about/" class="{% if page.url contains 'about' %}current{% endif %}">About</a></li>
     <li><a href="{{site.baseurl}}/contact/" class="{% if page.url contains 'contact' %}current{% endif %}">Contact</a></li>
