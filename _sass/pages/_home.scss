@@ -24,6 +24,32 @@
             margin-top: -75px;
         }
     }
+    .callout {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        margin-top: -20%;
+        @include media-breakpoint-up(sm) {
+            flex-direction: row;
+            margin-top: -3%;
+        }
+        .item {
+            background-color: #ffffff;
+            border-radius: 4px;
+            box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+              0 5px 15px rgba(0, 0, 0, 0.07);
+            width: 100%;
+            @include media-breakpoint-up(md) {
+              width: 47.5%;
+            }
+            video {
+                display: block;
+                border-radius: 4px;
+            }
+        }
+    }
   .call {
     position: relative;
     overflow: hidden;
@@ -35,11 +61,6 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    &.second {
-        float: right;
-        margin-top: -5%;
-        margin-bottom: 2rem;
-    }
     @include media-breakpoint-up(sm) {
       align-items: center;
       flex-direction: row;
