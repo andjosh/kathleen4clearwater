@@ -1,5 +1,5 @@
 ---
-title: Kathleen Beckman for Clearwater City Council
+title: Kathleen Beckman for Clearwater City Council, Seat 3
 layout: default
 bodyClass: page-home
 ---
@@ -8,25 +8,27 @@ bodyClass: page-home
     <h1 class='headline pb-1 pt-1 pb-sm-5 pt-sm-5'>
         {{ page.title }}
     </h1>
-  <div class="call">
-    <div class="call-box-top">
-      <div class="call-phone"><strong>Phone: </strong>
-        <a href="tel:{{ site.data.contact.phone }}">
-          {{ site.data.contact.phone }}
-        </a>
+    {% if false %}
+      <div class="call">
+        <div class="call-box-top">
+          <div class="call-phone"><strong>Phone: </strong>
+            <a href="tel:{{ site.data.contact.phone }}">
+              {{ site.data.contact.phone }}
+            </a>
+          </div>
+          <div class="call-email"><strong>Email: </strong>
+            <a href="mailto:{{ site.data.contact.email }}">
+              {{ site.data.contact.email }}
+            </a>
+          </div>
+        </div>
+        <div class="call-box-bottom">
+            <a href="{{site.baseurl}}/donate" class="button">
+                Donate
+            </a>
+        </div>
       </div>
-      <div class="call-email"><strong>Email: </strong>
-        <a href="mailto:{{ site.data.contact.email }}">
-          {{ site.data.contact.email }}
-        </a>
-      </div>
-    </div>
-    <div class="call-box-bottom">
-        <a href="{{site.baseurl}}/donate" class="button">
-            Donate
-        </a>
-    </div>
-  </div>
+    {% endif %}
 </div>
 <div class="splash-desktop">
     <img src="/images/banner.jpg"
@@ -36,7 +38,7 @@ bodyClass: page-home
     />
 </div>
 <div class="splash-mobile">
-    <div class="splash-copy p-3 pt-10">
+    <div class="splash-copy p-3">
         A new leader for residents, neighborhoods, small businesses, & the future of our environment and economy!
     </div>
     <img src="/images/kathleen_beckman.jpg"

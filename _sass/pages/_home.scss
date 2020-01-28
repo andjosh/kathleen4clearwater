@@ -9,6 +9,8 @@
     .splash-desktop {
         margin-top: -5%;
         display: none;
+        position: relative;
+        z-index: -1;
         @include media-breakpoint-up(sm) {
             display: block;
         }
@@ -21,7 +23,6 @@
         .splash-copy {
             background-color: $secondary;
             color: white;
-            margin-top: -75px;
         }
     }
     .callout {
